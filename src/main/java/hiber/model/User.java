@@ -20,8 +20,7 @@ public class User {
    private String email;
 
    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-           /**/
-           /*fetch = FetchType.LAZY*/
+   /*fetch = FetchType.LAZY*/
    @JoinColumn(name = "car_id")
    private Car car;
 
